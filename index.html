@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>SearchMe!</title>
 </head>
 
@@ -19,14 +20,25 @@
         <h1 class="offscreen">Search Me A WIkipedia Powered Search Engine</h1>
         <section class="searchEntry">
             <h2 class="offscreen">Search Term Entry</h2>
-            <div class="logo" aria-hidden="false">SearchMe!</div>
+            <div class="logo" aria-hidden="false">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="green">M</span>
+                <span class="yellow">e</span>
+                <span class="red exclaim">!</span>
+            </div>
             <form action="" id="searchBar" class="searchBar">
                 <label for="search" class="offscreen">Enter a search term of phrase</label>
                 <input type="text" id="search" autocomplete="off">
-                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms"> <i class="fas fa-times"></i>
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms">
+                    <i class="fas fa-times"></i>
                 </div>
-                <button id="searchButton" class="button searchButton" type="submit" aria-label="submit button"> <i
-                        class="fas fa-search"></i> </button>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="submit button">
+                    <i class="fas fa-search blue"></i> </button>
             </form>
         </section>
         <section class="results">
@@ -41,13 +53,14 @@
                         <a href="">Dachsund</a>
                     </div>
                     <div class="resultContents">
-                        <div class="resultImg"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
-                                alt="Dachsund"></div>
-                    </div>
-                    <div class="resultText">
-                        <p class="resultDescription">The dachshund (UK: DAKS-ənd, DASH-, -⁠huund, -⁠huunt or US:
-                            DAHKS...</p>
+                        <div class="resultImg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
+                                alt="Dachsund">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">The dachshund (UK: DAKS-ənd, DASH-, -⁠huund, -⁠huunt or
+                                US:DAHKS...</p>
+                        </div>
                     </div>
                 </div>
 
