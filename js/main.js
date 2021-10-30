@@ -1,6 +1,5 @@
-import { setSearchFocus, showClearTextButton } from "./searchBar.js";
-import { getSearchTerm } from "./dataFunction.js"
-import { retriveSearchResults } from "./dataFunction.js"
+import { clearPushListener,clearSearchText, setSearchFocus, showClearTextButton } from "./searchBar.js";
+import { getSearchTerm, retriveSearchResults } from "./dataFunction.js"
 import { deleteSearchResults, buildSearchResults, clearStatsLine, setStatsLine } from "./searchResults.js"
 
 
@@ -19,10 +18,13 @@ const initApp = () => {
     // 3 listeners clear text
     const search = document.getElementById("search");
     search.addEventListener("input", showClearTextButton);
+    const clear = document.getElementById("clear");
+    clear.addEventListener("click", clearSearchText);
+    clear.addEventListener("keydown", clearPushListener);
 
     // 1 listener on the form
     const form = document.getElementById('searchBar');
-    form.addEventListener("submit", submitTheSearch)
+    form.addEventListener("submit", submitTheSearch);
 }
 
 // Procedural "workflow" function
